@@ -49,7 +49,7 @@ module "aurora-postgresql" {
   label_order = local.label_order
 
   engine          = "aurora-postgresql"
-  engine_version  = "15.3"
+  engine_version  = "16.1"
   master_username = "root"
   database_name   = "postgres"
   storage_type    = "aurora-iopt1"
@@ -80,7 +80,7 @@ module "aurora-postgresql" {
   skip_final_snapshot                    = true
   create_db_cluster_parameter_group      = true
   db_cluster_parameter_group_name        = "aurora-postgres"
-  db_cluster_parameter_group_family      = "aurora-postgresql15"
+  db_cluster_parameter_group_family      = "aurora-postgresql16"
   db_cluster_parameter_group_description = "aurora postgres example cluster parameter group"
   db_cluster_parameter_group_parameters = [
     {
@@ -96,7 +96,7 @@ module "aurora-postgresql" {
   ]
   create_db_parameter_group      = true
   db_parameter_group_name        = "aurora-postgre"
-  db_parameter_group_family      = "aurora-postgresql15"
+  db_parameter_group_family      = "aurora-postgresql16"
   db_parameter_group_description = "postgres aurora example DB parameter group"
   db_parameter_group_parameters = [
     {
