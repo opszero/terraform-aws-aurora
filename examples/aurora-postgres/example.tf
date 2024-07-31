@@ -11,7 +11,7 @@ locals {
 
 
 module "vpc" {
-  source      = "cypik/vpc/aws"
+  source      = "opszero/vpc/aws"
   version     = "1.0.1"
   name        = "vpc"
   environment = "test"
@@ -21,7 +21,7 @@ module "vpc" {
 }
 
 module "subnets" {
-  source      = "cypik/subnet/aws"
+  source      = "opszero/subnet/aws"
   version     = "1.0.1"
   name        = "subnets"
   environment = "test"

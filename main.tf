@@ -2,7 +2,7 @@
 ## Labels module callled that will be used for naming and tags.
 ##------------------------------------------------------------------------------
 module "labels" {
-  source      = "cypik/labels/aws"
+  source      = "opszero/labels/aws"
   version     = "1.0.1"
   name        = var.name
   environment = var.environment
