@@ -51,7 +51,7 @@ variable "tags" {
 # DB Subnet Group
 ################################################################################
 
-variable "subnets" {
+variable "subnet_ids" {
   description = "List of subnet IDs used by database subnet group created"
   type        = list(string)
   default     = []

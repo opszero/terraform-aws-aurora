@@ -49,7 +49,7 @@ module "aurora_postgresql" {
   master_username = "root"
   database_name   = "postgres"
   vpc_id          = module.vpc.id
-  subnets         = module.subnets.public_subnet_id
+  subnet_ids      = module.subnets.public_subnet_id
   allowed_ports   = [5432]
   allowed_ip      = [module.vpc.vpc_cidr_block, ]
 

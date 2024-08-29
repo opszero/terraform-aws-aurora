@@ -68,7 +68,7 @@ module "aurora-mysql" {
 
   apply_immediately   = true
   skip_final_snapshot = true
-  subnets             = module.subnets.public_subnet_id
+  subnet_ids          = module.subnets.public_subnet_id
   vpc_id              = module.vpc.id
 
   create_db_cluster_parameter_group = true

@@ -50,7 +50,7 @@ module "aurora_mysql" {
   allowed_ports   = [3306]
   allowed_ip      = [module.vpc.vpc_cidr_block]
   vpc_id          = module.vpc.id
-  subnets         = module.subnets.public_subnet_id
+  subnet_ids      = module.subnets.public_subnet_id
 
   monitoring_interval = 60
   apply_immediately   = true

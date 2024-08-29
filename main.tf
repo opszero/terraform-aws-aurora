@@ -27,7 +27,7 @@ resource "aws_db_subnet_group" "default" {
 
   name        = module.labels.id
   description = format("For Aurora cluster %s", module.labels.id)
-  subnet_ids  = var.subnets
+  subnet_ids  = var.subnet_ids
   tags        = module.labels.tags
 }
 

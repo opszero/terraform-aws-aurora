@@ -55,7 +55,7 @@ module "aurora-postgresql" {
   storage_type    = "aurora-iopt1"
   allowed_ports   = [5432]
   allowed_ip      = ["0.0.0.0/0"]
-  subnets         = module.subnets.public_subnet_id
+  subnet_ids      = module.subnets.public_subnet_id
   vpc_id          = module.vpc.id
   instances = {
     1 = {
